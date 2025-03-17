@@ -106,3 +106,115 @@ h5 {
     color: var(--color-success);
 }
 
+/* ===========SIDEBAR ===============*/
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 97vh;
+    justify-content: space-between;
+    min-width: fit-content;
+    width: 12rem;
+}
+
+.sidebar__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sidebar__logo img {
+    width: 2.4rem;
+    background: var(--color-gray-0);
+    padding: 0.5rem;
+    border-radius: var(--radius-2);
+}
+
+.sidebar__logo h3 {
+    font-size: 1.4rem;
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+
+.sidebar__logo h3 span {
+    color: var(--color-primary);
+}
+
+.sidebar__top, .sidebar__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+
+.sidebar__top a, .sidebar__bottom a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .8rem;
+    border-radius: 0.6rem;
+
+}
+
+.sidebar__top a:hover, .sidebar__bottom a:hover {
+    background: var(--color-gray-0);
+    transform: translateX(0.5rem);
+}
+
+.sidebar__top a i, .sidebar__bottom a i {
+    font-size: 1rem;
+    color: var(--color-gray-500);
+}
+ 
+.sidebar__top a h5, .sidebar__bottom a h5 {
+    color: var(--color-gray-500);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sidebar a.active {
+    background: var(--color-primary);
+}
+
+.sidebar a.active i, .sidebar a.active h5 {
+    color: var(--color-gray-0);
+}
+
+main {
+    background: var(--color-gray-0);
+    padding: 2rem;
+}
