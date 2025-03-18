@@ -234,6 +234,7 @@ main {
 .main__wrapper{
     display: grid;
     grid-template-columns: 3fr 1fr;
+    gap: 1rem;
 }
 
 h1 {
@@ -250,7 +251,7 @@ h1 {
 
 .card {
     background: linear-gradient(135deg, #fff1f1, #ff8686);
-    padding: 1rem 1.5rem;
+    padding: .8rem 1.3rem;
     border-radius: var(--radius-2);
     color: #444;
     position: relative;
@@ -259,13 +260,54 @@ h1 {
     cursor: default;
 }
 
+.card::before {
+    content:"";
+    display: block;
+    position: absolute;
+    right: -25%;
+    top: 15%;
+    height: 140%;
+    aspect-ratio: 1/1;
+    background: linear-gradient(115deg, black, rgba(255, 255, 255, 0), transparent, transparent);
+    border-radius: 50%;
+    opacity: 0.1;
+}
+.card::after {
+    content:"";
+    display: block;
+    position: absolute;
+    right: -25%;
+    top: 15%;
+    height: 70%;
+    aspect-ratio: 1/1;
+    background: linear-gradient(115deg, black, rgba(255, 255, 255, 0), transparent, transparent);
+    border-radius: 50%;
+    opacity: 0.1;
+}
+
+.card:nth-child(2) {
+    background: linear-gradient(135deg, #eefcff, #3ec2e3);
+}
+.card:nth-child(3) {
+    background: linear-gradient(135deg, #fefeee, #d9e14a);
+}
+.card:nth-child(4) {
+    background: linear-gradient(135deg, #f2efff, #a391ff);
+}
+
+.card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 1rem var(--color-gray-100);
+}
+
 .card h5 {
     color: #222;
+    font-size: .8rem;
 }
 
 .card h5 span {
     margin-left: .3rem;
-    font-size: .7rem;
+    font-size: .5rem;
 }
 
 .card h2 {
@@ -273,7 +315,11 @@ h1 {
     color: #101213;
 }
 
-
+.card div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 
