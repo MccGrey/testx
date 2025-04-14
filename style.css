@@ -535,3 +535,43 @@ margin-top: 1rem;
     color: var(--color-gray-0);
 }
 
+
+/* ============ media queies =================*/
+
+@media screen and (max-width: 1024px) {
+    body {
+        .sidebar {
+            width: fit-content;
+
+        }
+
+        .sidebar h3, .sidebar h5 {
+            display: none;
+        }
+
+        .sidebar a {
+            padding: 0.7rem;
+        }
+
+        .navbar__search {
+            width: 40vw;
+        }
+
+        .topProducts {
+            margin-bottom: 0;
+        }
+
+        .main__wrapper {
+            grid-template-columns: 1fr;
+        }
+
+        .topCategories {
+            margin-top: 0;
+        }
+
+        .nextEvents {
+            margin-bottom: 3rem;
+        }
+
+    }
+}
