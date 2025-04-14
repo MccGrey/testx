@@ -536,7 +536,7 @@ margin-top: 1rem;
 }
 
 
-/* ============ media queies =================*/
+/* ============ media queies for tablet=================*/
 
 @media screen and (max-width: 1024px) {
     body {
@@ -571,7 +571,13 @@ margin-top: 1rem;
 
         .nextEvents {
             margin-bottom: 3rem;
-        }
+        }                   
 
     }
+}
+
+/* ============ media queies for mobile devices=================*/
+
+@media screen and () {
+
 }
